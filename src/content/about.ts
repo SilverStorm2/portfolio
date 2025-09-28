@@ -59,11 +59,11 @@ export const bioContent: Record<Language, BioContentEntry> = {
       },
     ],
     profile: {
-      name: 'Gabriela Nowak',
+      name: 'Gabriela Gugulska-Sierant',
       role: 'Full-Stack Developer',
       location: 'Remote, EU',
       imageSrc: '/photo.jpg',
-      imageAlt: 'Portrait of Gabriela Nowak',
+      imageAlt: 'Portrait of Gabriela Gugulska-Sierant',
     },
   },
   pl: {
@@ -107,11 +107,11 @@ export const bioContent: Record<Language, BioContentEntry> = {
       },
     ],
     profile: {
-      name: 'Gabriela Nowak',
+      name: 'Gabriela Gugulska-Sierant',
       role: 'Full-Stack Developer',
       location: 'Zdalnie, UE',
       imageSrc: '/photo.jpg',
-      imageAlt: 'Portret Gabrieli Nowak',
+      imageAlt: 'Portret Gabrieli Gugulskiej-Sierant',
     },
   },
 };

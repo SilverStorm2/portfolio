@@ -14,7 +14,7 @@ type HeroContent = {
 export const heroContent: Record<Language, HeroContent> = {
   en: {
     greeting: "Hello, I'm",
-    name: 'Gabriela Nowak',
+    name: 'Gabriela Gugulska-Sierant',
     title: 'Full-Stack Developer',
     subtitle: 'Product Engineer & UI Specialist',
     description:
@@ -25,7 +25,7 @@ export const heroContent: Record<Language, HeroContent> = {
   },
   pl: {
     greeting: 'Cze\u015b\u0107, jestem',
-    name: 'Gabriela Nowak',
+    name: 'Gabriela Gugulska-Sierant',
     title: 'Full-Stack Developer',
     subtitle: 'Full-Stack Developer & specjalistka UI',
     description:
