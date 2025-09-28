@@ -1,0 +1,68 @@
+﻿{
+  "projects": [
+    {
+      "slug": "design-system-kit",
+      "title": {
+        "en": "Design System Kit",
+        "pl": "Zestaw systemu projektowego"
+      },
+      "summary": {
+        "en": "Reusable component library with documentation, theming, and Figma handoff for product teams.",
+        "pl": "Biblioteka komponent\u00f3w z dokumentacj\u0105, tematyzacj\u0105 i przekazaniem do Figma dla zespo\u0142\u00f3w produktowych."
+      },
+      "tech": ["React", "TypeScript", "Storybook", "Tailwind CSS"],
+      "links": {
+        "demo": "https://example.com/design-system",
+        "source": "https://github.com/johndoe/design-system-kit"
+      }
+    },
+    {
+      "slug": "realtime-analytics",
+      "title": {
+        "en": "Realtime Analytics Dashboard",
+        "pl": "Panel analityczny w czasie rzeczywistym"
+      },
+      "summary": {
+        "en": "Streaming dashboards for IoT metrics with server-side events and automated alerting.",
+        "pl": "Transmisja na \u017cywo danych IoT z alertami i wykresami aktualizowanymi w czasie rzeczywistym."
+      },
+      "tech": ["Next.js", "Edge Functions", "WebSockets", "D3.js"],
+      "links": {
+        "demo": "https://example.com/realtime-analytics",
+        "source": "https://github.com/johndoe/realtime-analytics"
+      }
+    },
+    {
+      "slug": "knowledge-base",
+      "title": {
+        "en": "AI Knowledge Base",
+        "pl": "Baza wiedzy wspierana AI"
+      },
+      "summary": {
+        "en": "Semantic search platform with embeddings, content moderation, and editorial workflows.",
+        "pl": "Platforma wyszukiwania semantycznego z embeddingami, moderacj\u0105 tre\u015bci i workflow redakcyjnym."
+      },
+      "tech": ["Next.js", "PostgreSQL", "OpenAI", "Prisma"],
+      "links": {
+        "demo": "https://example.com/knowledge-base",
+        "source": "https://github.com/johndoe/knowledge-base"
+      }
+    },
+    {
+      "slug": "personal-finance",
+      "title": {
+        "en": "Personal Finance Coach",
+        "pl": "Asystent finans\u00f3w osobistych"
+      },
+      "summary": {
+        "en": "Mobile-first budgeting app with cashflow projections and savings nudges.",
+        "pl": "Aplikacja bud\u017cetowa mobile-first z prognozami przep\u0142yw\u00f3w pieni\u0119\u017cnych i sugestiami oszcz\u0119dno\u015bci."
+      },
+      "tech": ["React Native", "Expo", "Firebase", "Zustand"],
+      "links": {
+        "demo": "https://example.com/personal-finance",
+        "source": "https://github.com/johndoe/personal-finance-coach"
+      }
+    }
+  ]
+}

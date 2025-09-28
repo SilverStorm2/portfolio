@@ -1,0 +1,59 @@
+# Portfolio MVP - task list for agents
+// finished, checked for errors
+tasks:
+  - id: 0
+    title: 'Repo setup'
+    description: 'Initialize Next.js (App Router) project with Tailwind v4 and shadcn/ui. Configure TypeScript and ESLint/Prettier.'
+    acceptance:
+      - 'Project runs with npm run dev'
+      - 'Home page renders with base layout'
+
+// finished, checked for errors
+  - id: 1
+    title: 'Navigation & Layout'
+    description: 'Create responsive navbar with language switch (EN/PL), footer with social links. Layout should be mobile-first.'
+    acceptance:
+      - 'Navbar works on desktop and mobile'
+      - 'Language switch changes text content'
+
+// 
+  - id: 2
+    title: 'Hero Section'
+    description: 'Build hero with name, tagline, call-to-action (link to projects).'
+    acceptance:
+      - 'Hero displays correctly across screen sizes'
+
+  - id: 3
+    title: 'About Section'
+    description: 'Add section with short bio, skills overview, and profile image.'
+    acceptance:
+      - 'Bio text editable via config'
+      - 'Image loads correctly'
+
+  - id: 4
+    title: 'Projects Section'
+    description: 'Grid of portfolio projects with title, description, tech stack, and link to demo/GitHub.'
+    acceptance:
+      - 'Projects load from JSON/YAML data file'
+      - 'Cards are responsive and clickable'
+
+  - id: 5
+    title: 'Contact Section'
+    description: 'Form with name, email, message. Validate inputs. Optionally connect to form backend (e.g. Formspree).'
+    acceptance:
+      - 'Form validates required fields'
+      - 'Submission sends successfully'
+
+  - id: 6
+    title: 'i18n & Accessibility'
+    description: 'Implement internationalization (EN/PL) and basic accessibility (aria labels, focus states).'
+    acceptance:
+      - 'All text translated'
+      - 'Keyboard navigation works'
+
+  - id: 7
+    title: 'Deployment'
+    description: 'Deploy to Vercel. Configure SEO basics (title, description, OpenGraph).'
+    acceptance:
+      - 'Live URL available'
+      - 'Lighthouse scores ≥ 90'

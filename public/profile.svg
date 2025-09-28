@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Profile illustration</title>
+  <desc id="desc">Abstract illustration of a person with gradient background</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="48" fill="url(#bg)" />
+  <circle cx="160" cy="118" r="68" fill="#f8fafc" opacity="0.9" />
+  <path d="M160 176c-55 0-100 36-110 84 44 36 176 36 220 0-10-48-55-84-110-84z" fill="#111827" opacity="0.2" />
+  <path d="M160 172c-48 0-88 32-88 72v20c56 20 120 20 176 0v-20c0-40-40-72-88-72z" fill="#0f172a" opacity="0.45" />
+  <path d="M160 168c-28 0-48-20-52-52 16-8 36-12 52-12s36 4 52 12c-4 32-24 52-52 52z" fill="#f8fafc" />
+  <path d="M160 144c-12 0-20-8-20-20s8-20 20-20 20 8 20 20-8 20-20 20z" fill="#94a3b8" />
+  <path d="M116 244c12-20 28-32 44-32s32 12 44 32c-28 12-60 12-88 0z" fill="url(#shirt)" />
+</svg>
