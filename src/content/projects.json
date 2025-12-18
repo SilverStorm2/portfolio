@@ -1,67 +1,62 @@
 ﻿{
   "projects": [
+    
     {
-      "slug": "design-system-kit",
+      "slug": "ecommerce-store-modern-style",
       "title": {
-        "en": "Design System Kit",
-        "pl": "Zestaw systemu projektowego"
+        "en": "E-commerce Store \u2013 Modern Style",
+        "pl": "E-commerce Store \u2013 Modern Style"
       },
       "summary": {
-        "en": "Reusable component library with documentation, theming, and Figma handoff for product teams.",
-        "pl": "Biblioteka komponent\u00f3w z dokumentacj\u0105, tematyzacj\u0105 i przekazaniem do Figma dla zespo\u0142\u00f3w produktowych."
+        "en": "Modern online store with an intuitive interface and stylish products. The project focuses on accessibility, design, and compliance with web standards.",
+        "pl": "Nowoczesny sklep internetowy z intuicyjnym interfejsem i stylowymi produktami. Projekt stawia na dost\u0119pno\u015b\u0107, design i zgodno\u015b\u0107 ze standardami WWW."
       },
-      "tech": ["React", "TypeScript", "Storybook", "Tailwind CSS"],
+      "tech": ["HTML", "SASS/CSS", "JavaScript", "npm"],
       "links": {
-        "demo": "https://example.com/design-system",
-        "source": "https://github.com/johndoe/design-system-kit"
+        "demo": "https://e-commerce-puce-one-70.vercel.app/",
+        "source": "https://github.com/SilverStorm2/e-commerce"
       }
     },
     {
-      "slug": "realtime-analytics",
-      "title": {
-        "en": "Realtime Analytics Dashboard",
-        "pl": "Panel analityczny w czasie rzeczywistym"
-      },
-      "summary": {
-        "en": "Streaming dashboards for IoT metrics with server-side events and automated alerting.",
-        "pl": "Transmisja na \u017cywo danych IoT z alertami i wykresami aktualizowanymi w czasie rzeczywistym."
-      },
-      "tech": ["Next.js", "Edge Functions", "WebSockets", "D3.js"],
-      "links": {
-        "demo": "https://example.com/realtime-analytics",
-        "source": "https://github.com/johndoe/realtime-analytics"
-      }
-    },
-    {
-      "slug": "knowledge-base",
+      "slug": "react-blog",
       "title": {
         "en": "AI Knowledge Base",
         "pl": "Baza wiedzy wspierana AI"
       },
       "summary": {
-        "en": "Semantic search platform with embeddings, content moderation, and editorial workflows.",
-        "pl": "Platforma wyszukiwania semantycznego z embeddingami, moderacj\u0105 tre\u015bci i workflow redakcyjnym."
+        "en": "Modern blog playground using React and Redux for browsing, adding, editing and deleting blog posts.",
+        "pl": "Nowoczesny blog stworzony w React i Redux do przeglądania, dodawania, edycji oraz usuwania wpis\u00f3w."
       },
-      "tech": ["Next.js", "PostgreSQL", "OpenAI", "Prisma"],
+      "tech": ["React", "Redux", "React Bootstrap"],
       "links": {
-        "demo": "https://example.com/knowledge-base",
-        "source": "https://github.com/johndoe/knowledge-base"
+        "demo": "https://react-blog-liart-rho.vercel.app/",
+        "source": "https://github.com/SilverStorm2/react-blog"
       }
     },
     {
-      "slug": "personal-finance",
+      "slug": "tic-tac-toe-game",
       "title": {
-        "en": "Personal Finance Coach",
-        "pl": "Asystent finans\u00f3w osobistych"
+        "en": "Tic-Tac-Toe Game",
+        "pl": "Gra w k\u00f3\u0142ko i krzy\u017cyk"
       },
       "summary": {
-        "en": "Mobile-first budgeting app with cashflow projections and savings nudges.",
-        "pl": "Aplikacja bud\u017cetowa mobile-first z prognozami przep\u0142yw\u00f3w pieni\u0119\u017cnych i sugestiami oszcz\u0119dno\u015bci."
+        "en": "A classic tic-tac-toe game for two players with a responsive UI and dynamic gameplay.",
+        "pl": "Klasyczna gra w k\u00f3\u0142ko i krzy\u017cyk dla dw\u00f3ch graczy z responsywnym interfejsem i dynamiczn\u0105 rozgrywk\u0105."
       },
-      "tech": ["React Native", "Expo", "Firebase", "Zustand"],
+      "tech": ["JavaScript", "HTML", "CSS", "Bootstrap"],
+      "cta": {
+        "demo": {
+          "en": "🎮 Play",
+          "pl": "🎮 Zagraj"
+        },
+        "source": {
+          "en": " Source code",
+          "pl": " Kod źródłowy"
+        }
+      },
       "links": {
-        "demo": "https://example.com/personal-finance",
-        "source": "https://github.com/johndoe/personal-finance-coach"
+        "demo": "https://tic-tac-toe-game-q44p.vercel.app/",
+        "source": "https://github.com/SilverStorm2/tic-tac-toe-game"
       }
     }
   ]

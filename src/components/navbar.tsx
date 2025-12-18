@@ -1,17 +1,20 @@
 ﻿'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import Link from 'next/link';
-import { Globe, Menu, X } from 'lucide-react';
+import { Check, ChevronDown, Globe, Menu, X } from 'lucide-react';
 import { useLanguage } from './layout';
 import {
+  languageMenuLabel,
   languageNames,
-  languageToggleLabel,
   navigationContent,
 } from '@/content/navigation';
 
 const focusRing =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background';
+
+type Language = ReturnType<typeof useLanguage>['language'];
+type SetLanguage = ReturnType<typeof useLanguage>['setLanguage'];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +25,8 @@ export default function Navbar() {
   }, [language]);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
-  const toggleLanguage = () => setLanguage(language === 'en' ? 'pl' : 'en');
 
   const labels = navigationContent[language];
-  const languageButtonLabel = languageToggleLabel[language];
   const mobileMenuId = 'mobile-navigation';
 
   const navLinks = [
@@ -56,31 +57,11 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <button
-              type="button"
-              onClick={toggleLanguage}
-              className={`flex items-center space-x-1 text-foreground transition-colors hover:text-primary ${focusRing}`}
-              aria-label={languageButtonLabel}
-            >
-              <Globe className="h-4 w-4" aria-hidden={true} />
-              <span className="text-sm font-medium" aria-hidden={true}>
-                {languageNames[language].slice(0, 2).toUpperCase()}
-              </span>
-            </button>
+            <LanguageMenu language={language} setLanguage={setLanguage} />
           </div>
 
           <div className="flex items-center space-x-4 md:hidden">
-            <button
-              type="button"
-              onClick={toggleLanguage}
-              className={`flex items-center space-x-1 text-foreground transition-colors hover:text-primary ${focusRing}`}
-              aria-label={languageButtonLabel}
-            >
-              <Globe className="h-4 w-4" aria-hidden={true} />
-              <span className="text-sm font-medium" aria-hidden={true}>
-                {languageNames[language].slice(0, 2).toUpperCase()}
-              </span>
-            </button>
+            <LanguageMenu language={language} setLanguage={setLanguage} />
             <button
               type="button"
               onClick={toggleMenu}
@@ -118,5 +99,101 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+  );
+}
+
+function LanguageMenu({
+  language,
+  setLanguage,
+}: {
+  language: Language;
+  setLanguage: SetLanguage;
+}) {
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const languageMenuRef = useRef<HTMLDivElement | null>(null);
+  const languageMenuId = useId();
+
+  useEffect(() => {
+    if (!isLanguageOpen) {
+      return;
+    }
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (!languageMenuRef.current) {
+        return;
+      }
+
+      if (!languageMenuRef.current.contains(event.target as Node)) {
+        setIsLanguageOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsLanguageOpen(false);
+      }
+    };
+
+    document.addEventListener('pointerdown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isLanguageOpen]);
+
+  const selectLanguage = (lang: Language) => {
+    setLanguage(lang);
+    setIsLanguageOpen(false);
+  };
+
+  return (
+    <div ref={languageMenuRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setIsLanguageOpen((prev) => !prev)}
+        className={`flex items-center gap-2 text-foreground transition-colors hover:text-primary ${focusRing}`}
+        aria-label={languageMenuLabel[language]}
+        aria-haspopup="menu"
+        aria-expanded={isLanguageOpen}
+        aria-controls={languageMenuId}
+      >
+        <Globe className="h-4 w-4" aria-hidden={true} />
+        <span className="text-sm font-medium" aria-hidden={true}>
+          {language.toUpperCase()}
+        </span>
+        <ChevronDown className="h-4 w-4" aria-hidden={true} />
+      </button>
+
+      {isLanguageOpen && (
+        <div
+          id={languageMenuId}
+          role="menu"
+          className="absolute right-0 z-50 mt-2 w-24 overflow-hidden rounded-xl border border-border bg-background shadow-lg"
+        >
+          {(['en', 'pl'] as const).map((lang) => {
+            const isActive = lang === language;
+            const label = lang.toUpperCase();
+
+            return (
+              <button
+                key={lang}
+                type="button"
+                role="menuitemradio"
+                aria-checked={isActive}
+                onClick={() => selectLanguage(lang)}
+                className={`flex w-full items-center justify-between px-3 py-2 text-left text-sm font-medium text-foreground transition-colors hover:bg-primary/10 hover:text-primary ${focusRing}`}
+              >
+                <span>{label}</span>
+                {isActive ? (
+                  <Check className="h-4 w-4 text-primary" aria-hidden />
+                ) : null}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }

@@ -12,6 +12,10 @@ interface ProjectContent {
   title: Record<Language, string> & { en: string };
   summary: Record<Language, string> & { en: string };
   tech: string[];
+  cta?: {
+    demo?: Record<Language, string> & { en: string };
+    source?: Record<Language, string> & { en: string };
+  };
   links: {
     demo?: string;
     source?: string;
@@ -45,49 +49,62 @@ export default function Projects() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projectsFile.projects.map((project) => (
-            <article
-              key={project.slug}
-              className="group flex h-full flex-col rounded-2xl border border-border bg-card/60 p-6 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-            >
-              <div className="flex-1 space-y-4">
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-xl font-semibold text-foreground">
-                    {project.title[language] ?? project.title.en}
-                  </h3>
-                  <span className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-primary">
-                    {project.tech[0]}
-                  </span>
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  {project.summary[language] ?? project.summary.en}
-                </p>
-                <ul className="flex flex-wrap gap-2 text-xs text-muted-foreground">
-                  {project.tech.map((tech) => (
-                    <li
-                      key={tech}
-                      className="rounded-full border border-border bg-background/60 px-3 py-1"
-                    >
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          {projectsFile.projects.map((project) => {
+            const demoCta = project.cta?.demo;
+            const sourceCta = project.cta?.source;
 
-              <div className="mt-6 flex flex-wrap items-center gap-3">
-                <CardLink
-                  href={project.links.demo}
-                  icon={ExternalLink}
-                  label={linkLabels.demo}
-                />
-                <CardLink
-                  href={project.links.source}
-                  icon={Github}
-                  label={linkLabels.source}
-                />
-              </div>
-            </article>
-          ))}
+            return (
+              <article
+                key={project.slug}
+                className="group flex h-full flex-col rounded-2xl border border-border bg-card/60 p-6 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="flex-1 space-y-4">
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="text-xl font-semibold text-foreground">
+                      {project.title[language] ?? project.title.en}
+                    </h3>
+                    <span className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-primary">
+                      {project.tech[0]}
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {project.summary[language] ?? project.summary.en}
+                  </p>
+                  <ul className="flex flex-wrap gap-2 text-xs text-muted-foreground">
+                    {project.tech.map((tech) => (
+                      <li
+                        key={tech}
+                        className="rounded-full border border-border bg-background/60 px-3 py-1"
+                      >
+                        {tech}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <CardLink
+                    href={project.links.demo}
+                    icon={ExternalLink}
+                    label={
+                      demoCta
+                        ? (demoCta[language] ?? demoCta.en)
+                        : linkLabels.demo
+                    }
+                  />
+                  <CardLink
+                    href={project.links.source}
+                    icon={Github}
+                    label={
+                      sourceCta
+                        ? (sourceCta[language] ?? sourceCta.en)
+                        : linkLabels.source
+                    }
+                  />
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

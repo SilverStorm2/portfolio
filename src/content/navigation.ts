@@ -32,6 +32,11 @@ export const languageToggleLabel: Record<Language, string> = {
   pl: 'Prze\u0142\u0105cz na angielski',
 };
 
+export const languageMenuLabel: Record<Language, string> = {
+  en: 'Open language menu',
+  pl: 'Otw\u00f3rz menu j\u0119zyka',
+};
+
 export const languageNames: Record<Language, string> = {
   en: 'English',
   pl: 'Polski',

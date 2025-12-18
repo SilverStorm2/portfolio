@@ -12,8 +12,8 @@ type SiteConfig = {
 
 const siteConfig: SiteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portfolio.example.com',
-  owner: 'Gabriela Nowak',
-  title: 'Gabriela Nowak — Full-Stack Developer',
+  owner: 'Gabriela Gugulska-Sierant',
+  title: 'Gabriela Gugulska-Sierant — Full-Stack Developer',
   description:
     'Full-stack developer crafting accessible, performant web products with TypeScript, React, Node.js, and modern tooling.',
 };
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
-    template: '%s | Gabriela Nowak Portfolio',
+    template: '%s | Gabriela Gugulska-Sierant Portfolio',
   },
   description: siteConfig.description,
   keywords: [
-    'Gabriela Nowak',
+    'Gabriela Gugulska-Sierant',
     'portfolio',
     'full-stack developer',
     'React',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
         url: '/og-image.svg',
         width: 1200,
         height: 630,
-        alt: 'Gabriela Nowak — Full-Stack Developer',
+        alt: 'Gabriela Gugulska-Sierant — Full-Stack Developer',
       },
     ],
     locale: 'en_US',
