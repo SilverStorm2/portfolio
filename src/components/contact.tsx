@@ -21,6 +21,9 @@ const initialFormState: FormFields = {
   message: '',
 };
 
+const contactEmail =
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'ggs.amsterdam@gmail.com';
+
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function Contact() {
@@ -148,6 +151,15 @@ export default function Contact() {
           </h2>
           <p className="text-base md:text-lg text-muted-foreground">
             {copy.description}
+          </p>
+          <p className="text-sm text-muted-foreground">
+            {copy.directEmailLabel}{' '}
+            <a
+              href={`mailto:${contactEmail}`}
+              className="font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              {contactEmail}
+            </a>
           </p>
         </div>
 

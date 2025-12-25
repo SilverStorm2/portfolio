@@ -27,6 +27,7 @@ export interface ContactCopy {
     errorMessage: string;
     endpointMissing: string;
   };
+  directEmailLabel: string;
   consent: string;
 }
 
@@ -59,10 +60,11 @@ export const contactContent: Record<Language, ContactCopy> = {
         'Thank you! Your message is on its way. I will reply as soon as possible.',
       errorTitle: 'Something went wrong',
       errorMessage:
-        'I could not send your message right now. Please try again or contact me directly at contact@example.com.',
+        'I could not send your message right now. Please try again or contact me directly via email.',
       endpointMissing:
         'Form endpoint is not configured. Set NEXT_PUBLIC_FORMSPREE_ENDPOINT to enable submissions.',
     },
+    directEmailLabel: 'Prefer email? Write to',
     consent: 'By clicking "Send message" you agree to be contacted by email.',
   },
   pl: {
@@ -93,10 +95,11 @@ export const contactContent: Record<Language, ContactCopy> = {
         'Dzi\u0119kuj\u0119! Twoja wiadomo\u015b\u0107 zosta\u0142a wys\u0142ana. Odpowiem tak szybko, jak to mo\u017cliwe.',
       errorTitle: 'Co\u015b posz\u0142o nie tak',
       errorMessage:
-        'Nie uda\u0142o si\u0119 wys\u0142a\u0107 wiadomo\u015bci. Spr\u00f3buj ponownie lub napisz bezpo\u015brednio na contact@example.com.',
+        'Nie uda\u0142o si\u0119 wys\u0142a\u0107 wiadomo\u015bci. Spr\u00f3buj ponownie lub napisz bezpo\u015brednio mailowo.',
       endpointMissing:
         'Brak konfiguracji formularza. Ustaw NEXT_PUBLIC_FORMSPREE_ENDPOINT, aby w\u0142\u0105czy\u0107 wysy\u0142k\u0119.',
     },
+    directEmailLabel: 'Wolisz e-mail? Napisz na',
     consent:
       'Klikaj\u0105c "Wy\u015blij wiadomo\u015b\u0107" wyra\u017casz zgod\u0119 na kontakt mailowy.',
   },

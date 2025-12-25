@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    href: 'mailto:ggs.amsterdam@gmail.com',
+    href: '#contact',
     icon: Mail,
   },
 ] as const;
