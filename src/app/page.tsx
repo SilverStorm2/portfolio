@@ -22,7 +22,7 @@ const structuredData = {
   sameAs: [
     'https://github.com',
     'https://linkedin.com',
-    'mailto:contact@example.com',
+    'mailto:ggs.amsterdam@gmail.com',
   ],
   knowsAbout: [
     'TypeScript',
