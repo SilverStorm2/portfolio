@@ -87,7 +87,9 @@ export default function Contact() {
       return;
     }
 
-    const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
+    const endpoint =
+      process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ??
+      'https://formspree.io/f/xykgrybj';
     if (!endpoint) {
       setSubmissionState('error');
       setStatusInfo({
