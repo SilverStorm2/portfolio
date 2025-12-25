@@ -15,7 +15,7 @@ const siteConfig: SiteConfig = {
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_URL
       ? `https://${process.env.VERCEL_URL}`
-      : 'https://portfolio.example.com'),
+      : 'https://portfolio-main-projects.vercel.app'),
   owner: 'Gabriela Gugulska-Sierant',
   title: 'Full-Stack Developer',
   description:
