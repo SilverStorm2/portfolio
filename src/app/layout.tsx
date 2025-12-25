@@ -17,7 +17,7 @@ const siteConfig: SiteConfig = {
       ? `https://${process.env.VERCEL_URL}`
       : 'https://portfolio.example.com'),
   owner: 'Gabriela Gugulska-Sierant',
-  title: 'Vercel silverstorm.dev',
+  title: 'Full-Stack Developer',
   description:
     'Full-stack developer crafting accessible, performant web products with TypeScript, React, Node.js, and modern tooling.',
 };
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
-    template: '%s | Vercel silverstorm.dev',
+    template: '%s | Full-Stack Developer',
   },
   description: siteConfig.description,
   keywords: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: '/og-image.svg',
         width: 1200,
         height: 630,
-        alt: 'Vercel silverstorm.dev',
+        alt: 'Full-Stack Developer',
       },
     ],
     locale: 'en_US',
