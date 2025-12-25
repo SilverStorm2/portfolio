@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    href: '#contact',
+    href: `mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'infogetcontact24@gmail.com'}`,
     icon: Mail,
   },
 ] as const;

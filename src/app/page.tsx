@@ -22,7 +22,7 @@ const structuredData = {
   sameAs: [
     'https://github.com',
     'https://linkedin.com',
-    `mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'ggs.amsterdam@gmail.com'}`,
+    `mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'infogetcontact24@gmail.com'}`,
   ],
   knowsAbout: [
     'TypeScript',

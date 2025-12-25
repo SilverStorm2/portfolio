@@ -22,7 +22,7 @@ const initialFormState: FormFields = {
 };
 
 const contactEmail =
-  process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'ggs.amsterdam@gmail.com';
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'infogetcontact24@gmail.com';
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
