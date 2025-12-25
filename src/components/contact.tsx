@@ -92,7 +92,7 @@ export default function Contact() {
 
     const endpoint =
       process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ??
-      'https://formspree.io/f/xykgrybj';
+      'https://formspree.io/f/xlgrqwoq';
     if (!endpoint) {
       setSubmissionState('error');
       setStatusInfo({
