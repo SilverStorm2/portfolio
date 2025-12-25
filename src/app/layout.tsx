@@ -11,7 +11,11 @@ type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portfolio.example.com',
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : 'https://portfolio.example.com'),
   owner: 'Gabriela Gugulska-Sierant',
   title: 'Gabriela Gugulska-Sierant — Full-Stack Developer',
   description:

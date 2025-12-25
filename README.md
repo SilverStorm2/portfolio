@@ -22,6 +22,8 @@ NEXT_PUBLIC_SITE_URL=https://localhost:3000
 NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/abcdefg
 ```
 
+On Vercel, `VERCEL_URL` is used as a fallback when `NEXT_PUBLIC_SITE_URL` is not set. For a stable canonical URL, keep `NEXT_PUBLIC_SITE_URL` configured in Production and Preview.
+
 ## Running Locally
 
 ```bash
