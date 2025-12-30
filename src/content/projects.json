@@ -18,10 +18,26 @@
       }
     },
     {
+      "slug": "book-app",
+      "title": {
+        "en": "Book App",
+        "pl": "Book App"
+      },
+      "summary": {
+        "en": "Clean book catalog with quick search, curated lists, and a friendly reading flow.",
+        "pl": "Czysty katalog książek z szybkim wyszukiwaniem, listami i przyjaznym flow czytelniczym."
+      },
+      "tech": ["React", "TypeScript", "Tailwind CSS", "ImgBB"],
+      "links": {
+        "demo": "https://book-app-five-jet.vercel.app/",
+        "source": "https://github.com/SilverStorm2/book-app.git"
+      }
+    },
+    {
       "slug": "shopapp-product-personalizer",
       "title": {
-        "en": "ShopApp — Product Personalizer",
-        "pl": "ShopApp — personalizacja produktu"
+        "en": "Shop App — Product Personalizer",
+        "pl": "Shop App — personalizacja produktu"
       },
       "summary": {
         "en": "Interactive product customizer with live preview, color variants, and a smooth, responsive layout.",
