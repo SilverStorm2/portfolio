@@ -18,6 +18,22 @@
       }
     },
     {
+      "slug": "shopapp-product-personalizer",
+      "title": {
+        "en": "ShopApp — Product Personalizer",
+        "pl": "ShopApp — personalizacja produktu"
+      },
+      "summary": {
+        "en": "Interactive product customizer with live preview, color variants, and a smooth, responsive layout.",
+        "pl": "Interaktywny konfigurator produktu z podglądem na żywo, wariantami kolorów i responsywnym układem."
+      },
+      "tech": ["React", "TypeScript", "Tailwind CSS"],
+      "links": {
+        "demo": "https://react-product-personalizer.vercel.app/",
+        "source": "https://github.com/SilverStorm2/react-product-personalizer"
+      }
+    },
+    {
       "slug": "react-blog",
       "title": {
         "en": "AI Knowledge Base",
