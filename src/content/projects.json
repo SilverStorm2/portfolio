@@ -34,6 +34,22 @@
       }
     },
     {
+      "slug": "currency-exchange-app",
+      "title": {
+        "en": "Currency Exchange App",
+        "pl": "Aplikacja do wymiany walut"
+      },
+      "summary": {
+        "en": "Currency converter with ECB data and fallback rates, plus history, favorites, and a 24h/7d/30d chart. It auto-detects the user’s local currency via navigator.language.",
+        "pl": "Konwerter walut z danymi ECB i kursami, z historią, ulubionymi i wykresem 24h/7d/30d. Automatycznie wykrywa lokalną walutę przez navigator language."
+      },
+      "tech": ["REACT", "JavaScript", "HTML", "SCSS", "API", "SVG"],
+      "links": {
+        "demo": "https://currency-app-sable.vercel.app/",
+        "source": "https://github.com/SilverStorm2/currency-exchange-app.git"
+      }
+    },
+    {
       "slug": "shopapp-product-personalizer",
       "title": {
         "en": "Shop App — Product Personalizer",
