@@ -122,6 +122,38 @@
         "demo": "https://szyfr1.vercel.app/",
         "source": "https://github.com/SilverStorm2/szyfr1.git"
       }
+    },
+    {
+      "slug": "student-cv-app",
+      "title": {
+        "en": "Student CV Builder",
+        "pl": "Kreator CV dla studentów"
+      },
+      "summary": {
+        "en": "Simple CV builder for students with localStorage persistence, edit mode, a public CV view, and a demo available at /cv/demo. Built with Next.js and Tailwind CSS (MIT License).",
+        "pl": "Prosty kreator CV dla studentów z zapisem w localStorage, trybem edycji, publicznym widokiem CV i demo pod /cv/demo. Zbudowany w Next.js i Tailwind CSS (licencja MIT)."
+      },
+      "tech": ["Next.js (App Router)", "React", "Tailwind CSS", "localStorage"],
+      "links": {
+        "demo": "https://student-cv-app.vercel.app/",
+        "source": "https://github.com/SilverStorm2/student-cv-app.git"
+      }
+    },
+    {
+      "slug": "dev-skills-tracker",
+      "title": {
+        "en": "Dev Skills Tracker",
+        "pl": "Dev Skills Tracker"
+      },
+      "summary": {
+        "en": "Interactive app for tracking web dev learning progress with statuses, categories, personal tips, localStorage, responsive UI, and dark mode. Built for the Adepci IT 2026 conference.",
+        "pl": "Interaktywna aplikacja do śledzenia postępów w nauce technologii web dev z statusami, kategoriami, poradami, localStorage, responsywnym UI i dark mode. Stworzona na konferencję Adepci IT 2026."
+      },
+      "tech": ["React 18", "TypeScript 5", "Vite 5", "Tailwind CSS 3", "shadcn/ui", "Lucide React", "LocalStorage API"],
+      "links": {
+        "demo": "https://dev-skills-tracker.vercel.app/",
+        "source": "https://github.com/SilverStorm2/dev-skills-tracker.git"
+      }
     }
   ]
 }
