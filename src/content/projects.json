@@ -108,22 +108,6 @@
       }
     },
     {
-      "slug": "szyfr1-bruteforce-cipher",
-      "title": {
-        "en": "Brute-Force Cipher (26 Shifts)",
-        "pl": "Szyfr brute-force (26 przesunięć)"
-      },
-      "summary": {
-        "en": "Contest task for TUKANO SOFTWARE HOUSE SP. that brute-forces a Caesar cipher by testing all 26 shifts.",
-        "pl": "Zadanie konkursowe dla TUKANO SOFTWARE HOUSE SP. brute-force szyfru Cezara przez sprawdzenie 26 przesunięć."
-      },
-      "tech": ["HTML", "CSS", "JavaScript", "API HuggingFace"],
-      "links": {
-        "demo": "https://szyfr1.vercel.app/",
-        "source": "https://github.com/SilverStorm2/szyfr1.git"
-      }
-    },
-    {
       "slug": "student-cv-app",
       "title": {
         "en": "Student CV Builder",
