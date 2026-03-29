@@ -1,6 +1,5 @@
 ﻿{
   "projects": [
-    
     {
       "slug": "ecommerce-store-modern-style",
       "title": {
@@ -124,6 +123,27 @@
       }
     },
     {
+      "slug": "adepci-it-cipher-analyzer",
+      "title": {
+        "en": "Adepci IT — Cipher brute-force",
+        "pl": "Adepci IT — Szyfr brute-force"
+      },
+      "summary": {
+        "en": "Competition-focused web app implementing Caesar cipher brute-force (26 shifts), scoring outputs using Polish language heuristics, and optionally validating results via the HuggingFace API before surfacing the correct decoded message and CTA.",
+  "pl": "Projekt konkursowy implementujący brute-force szyfru Cezara (26 przesunięć), ocenę wyników z wykorzystaniem heurystyk języka polskiego oraz opcjonalną walidację przez API HuggingFace przed prezentacją poprawnie odszyfrowanej wiadomości i CTA."
+      },
+      "tech": [
+        "React 18",
+        "JavaScript",
+        "CSS",
+        "HuggingFace Inference API",
+        "Express proxy"
+      ],
+      "links": {
+        "demo": "https://szyfr1.vercel.app/"
+      }
+    },
+    {
       "slug": "dev-skills-tracker",
       "title": {
         "en": "Dev Skills Tracker",
@@ -133,11 +153,64 @@
         "en": "Interactive app for tracking web dev learning progress with statuses, categories, personal tips, localStorage, responsive UI, and dark mode. Built for the Adepci IT 2026 conference.",
         "pl": "Interaktywna aplikacja do śledzenia postępów w nauce technologii web dev z statusami, kategoriami, poradami, localStorage, responsywnym UI i dark mode. Stworzona na konferencję Adepci IT 2026."
       },
-      "tech": ["React 18", "TypeScript 5", "Vite 5", "Tailwind CSS 3", "shadcn/ui", "Lucide React", "LocalStorage API"],
+      "tech": [
+        "React 18",
+        "TypeScript 5",
+        "Vite 5",
+        "Tailwind CSS 3",
+        "shadcn/ui",
+        "Lucide React",
+        "LocalStorage API"
+      ],
       "links": {
         "demo": "https://dev-skills-tracker.vercel.app/",
         "source": "https://github.com/SilverStorm2/dev-skills-tracker.git"
       }
+    },
+    {
+      "slug": "fenix-team",
+      "title": {
+        "en": "Fenix team",
+        "pl": "Fenix team"
+      },
+      "summary": {
+        "en": "Modern responsive website for a football academy, designed to present training programs, team values, and youth activities with clean UI, reusable components, and optimized performance.",
+        "pl": "Nowoczesna, responsywna strona szkółki piłkarskiej zaprojektowana do prezentacji treningów, wartości drużyny i zajęć dla młodzieży, z naciskiem na czysty UI, komponentowość i wydajność."
+      },
+      "tech": [
+        "Next.js",
+        "TypeScript 5",
+        "Tailwind CSS 3",
+        "shadcn/ui",
+        "Vercel"
+      ],
+      "links": {
+        "demo": "https://fenixteam.vercel.app/",
+        "source": ""
+      }
+    },
+    {
+      "slug": "iwater",
+      "title": {
+        "en": "iWater",
+        "pl": "iWater"
+      },
+      "summary": {
+         "en": "Corporate website developed with WordPress (Avada), designed to showcase water filtration services with a responsive layout, optimized UX, and structured content for better accessibility and conversion.",
+         "pl": "Strona firmowa stworzona w WordPressie (Avada), zaprojektowana do prezentacji usług filtracji wody, z responsywnym layoutem, zoptymalizowanym UX oraz uporządkowaną strukturą treści pod kątem dostępności i konwersji."
+      },
+         "tech": [
+        "WordPress",
+        "Avada Theme",
+        "HTLM",
+        "CSS",
+        "Responsive Design"
+      ],
+      "links": {
+        "demo": "https://iwater.com.pl/",
+        "source": ""
+      }
     }
+    
   ]
 }
