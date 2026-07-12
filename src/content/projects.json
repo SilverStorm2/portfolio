@@ -210,6 +210,22 @@
         "demo": "https://iwater.com.pl/",
         "source": ""
       }
+    },
+    {
+      "slug": "xss-payload-tester",
+      "title": {
+        "en": "XSS Payload Tester",
+        "pl": "Tester payloadów XSS"
+      },
+      "summary": {
+        "en": "A lab for safely testing how an app renders payloads and reacts to different input contexts.",
+        "pl": "Laboratorium do bezpiecznego sprawdzania, jak aplikacja renderuje payloady i reaguje na różne konteksty wejścia."
+      },
+      "tech": ["Security Testing", "HTML", "JavaScript", "Vercel"],
+      "links": {
+        "demo": "https://xss-tester-payloads.vercel.app/",
+        "source": "https://github.com/SilverStorm2/xss-tester-payloads-"
+      }
     }
     
   ]

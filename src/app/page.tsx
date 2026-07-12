@@ -13,7 +13,7 @@ const siteUrl =
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Gabriela Gugulska-Sierant',
+  name: 'Gabriela Gugulska',
   url: siteUrl,
   jobTitle: 'Full-Stack Developer',
   description:

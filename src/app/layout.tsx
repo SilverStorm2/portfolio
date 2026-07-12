@@ -16,7 +16,7 @@ const siteConfig: SiteConfig = {
     (process.env.VERCEL_URL
       ? `https://${process.env.VERCEL_URL}`
       : 'https://portfolio-main-projects.vercel.app'),
-  owner: 'Gabriela Gugulska-Sierant',
+  owner: 'Gabriela Gugulska',
   title: 'Full-Stack Developer',
   description:
     'Full-stack developer crafting accessible, performant web products with TypeScript, React, Node.js, and modern tooling.',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    'Gabriela Gugulska-Sierant',
+    'Gabriela Gugulska',
     'portfolio',
     'full-stack developer',
     'React',
