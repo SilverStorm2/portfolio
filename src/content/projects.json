@@ -130,7 +130,7 @@
       },
       "summary": {
         "en": "Competition-focused web app implementing Caesar cipher brute-force (26 shifts), scoring outputs using Polish language heuristics, and optionally validating results via the HuggingFace API before surfacing the correct decoded message and CTA.",
-  "pl": "Projekt konkursowy implementujący brute-force szyfru Cezara (26 przesunięć), ocenę wyników z wykorzystaniem heurystyk języka polskiego oraz opcjonalną walidację przez API HuggingFace przed prezentacją poprawnie odszyfrowanej wiadomości i CTA."
+        "pl": "Projekt konkursowy implementujący brute-force szyfru Cezara (26 przesunięć), ocenę wyników z wykorzystaniem heurystyk języka polskiego oraz opcjonalną walidację przez API HuggingFace przed prezentacją poprawnie odszyfrowanej wiadomości i CTA."
       },
       "tech": [
         "React 18",
@@ -196,16 +196,10 @@
         "pl": "iWater"
       },
       "summary": {
-         "en": "Corporate website developed with WordPress (Avada), designed to showcase water filtration services with a responsive layout, optimized UX, and structured content for better accessibility and conversion.",
-         "pl": "Strona firmowa stworzona w WordPressie (Avada), zaprojektowana do prezentacji usług filtracji wody, z responsywnym layoutem, zoptymalizowanym UX oraz uporządkowaną strukturą treści pod kątem dostępności i konwersji."
+        "en": "Corporate website developed with WordPress (Avada), designed to showcase water filtration services with a responsive layout, optimized UX, and structured content for better accessibility and conversion.",
+        "pl": "Strona firmowa stworzona w WordPressie (Avada), zaprojektowana do prezentacji usług filtracji wody, z responsywnym layoutem, zoptymalizowanym UX oraz uporządkowaną strukturą treści pod kątem dostępności i konwersji."
       },
-         "tech": [
-        "WordPress",
-        "Avada Theme",
-        "HTLM",
-        "CSS",
-        "Responsive Design"
-      ],
+      "tech": ["WordPress", "Avada Theme", "HTLM", "CSS", "Responsive Design"],
       "links": {
         "demo": "https://iwater.com.pl/",
         "source": ""
@@ -226,7 +220,72 @@
         "demo": "https://xss-tester-payloads.vercel.app/",
         "source": "https://github.com/SilverStorm2/xss-tester-payloads-"
       }
+    },
+    {
+      "slug": "auto-kruk",
+      "title": {
+        "en": "AUTO KRUK — Car Workshop",
+        "pl": "AUTO KRUK — warsztat samochodowy"
+      },
+      "summary": {
+        "en": "A modern website for a car workshop in Łapczyca, presenting mechanical, diagnostic, electrical, brake, suspension, and vehicle servicing in a clear, conversion-focused layout.",
+        "pl": "Nowoczesna strona warsztatu samochodowego w Łapczycy, prezentująca usługi mechaniczne, diagnostykę, elektrykę, naprawę hamulców i zawieszenia oraz serwis aut w czytelnym układzie nastawionym na kontakt."
+      },
+      "tech": ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      "links": {
+        "demo": "https://auto-kruk.vercel.app/"
+      }
+    },
+    {
+      "slug": "fizjo-activ",
+      "title": {
+        "en": "Fizjo-Activ — Physiotherapy",
+        "pl": "Fizjo-Activ — fizjoterapia"
+      },
+      "summary": {
+        "en": "A responsive website for a physiotherapy and massage practice in Łąkta Górna, highlighting individual therapy for adults and children with clear appointment and phone contact paths.",
+        "pl": "Responsywna strona gabinetu fizjoterapii i masażu w Łąkcie Górnej, prezentująca indywidualną terapię dorosłych i dzieci oraz zapewniająca czytelną ścieżkę umawiania wizyt i kontaktu telefonicznego."
+      },
+      "tech": ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      "links": {
+        "demo": "https://fizjo-activ.vercel.app/"
+      }
+    },
+    {
+      "slug": "english-lab-bochnia",
+      "title": {
+        "en": "English Lab Bochnia",
+        "pl": "English Lab Bochnia"
+      },
+      "summary": {
+        "en": "A distinctive website for an English school in Bochnia, showcasing personalized lessons for children, teenagers, and adults, including conversation practice and exam preparation.",
+        "pl": "Wyrazista strona szkoły języka angielskiego w Bochni, prezentująca lekcje dopasowane do dzieci, młodzieży i dorosłych, w tym konwersacje oraz przygotowanie do egzaminów."
+      },
+      "tech": ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      "links": {
+        "demo": "https://english-lab-bochnia.vercel.app/"
+      }
+    },
+    {
+      "slug": "cyberbase-rag",
+      "title": {
+        "en": "CyberBase — RAG Knowledge Platform",
+        "pl": "CyberBase — platforma wiedzy RAG"
+      },
+      "summary": {
+        "en": "A cybersecurity knowledge platform powered by Retrieval-Augmented Generation. It searches a private collection of technical documentation, PDF and Markdown files, OWASP resources, and educational repositories to generate grounded answers with visible sources.",
+        "pl": "Platforma wiedzy z zakresu cyberbezpieczeństwa wykorzystująca Retrieval-Augmented Generation. Przeszukuje prywatną bazę dokumentacji technicznej, plików PDF i Markdown, materiałów OWASP oraz repozytoriów edukacyjnych, aby generować odpowiedzi oparte na źródłach."
+      },
+      "tech": ["RAG", "Next.js", "React", "TypeScript", "RAGFlow"],
+      "cta": {
+        "demo": {
+          "en": "Watch video",
+          "pl": "Obejrzyj film"
+        }
+      },
+      "links": {
+        "demo": "https://youtu.be/Cmx2clpGfCY"
+      }
     }
-    
   ]
 }
