@@ -286,6 +286,36 @@
       "links": {
         "demo": "https://youtu.be/Cmx2clpGfCY"
       }
+    },
+    {
+      "slug": "blue-web-studio",
+      "title": {
+        "en": "Blue Web Studio",
+        "pl": "Blue Web Studio"
+      },
+      "summary": {
+        "en": "A modern, responsive website for a web design studio, presenting its services, selected projects, and collaboration process with clear calls to action.",
+        "pl": "Nowoczesna, responsywna strona studia projektującego witryny internetowe, prezentująca usługi, wybrane realizacje i proces współpracy z czytelnymi wezwaniami do działania."
+      },
+      "tech": ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      "links": {
+        "demo": "https://blue-web-studio.vercel.app/"
+      }
+    },
+    {
+      "slug": "cameleon-moda",
+      "title": {
+        "en": "Cameleon Fashion Stores",
+        "pl": "Sklepy odzieżowe Cameleon"
+      },
+      "summary": {
+        "en": "A responsive client website for a local fashion store network, showcasing its clothing, footwear, and accessories while helping customers find the nearest store.",
+        "pl": "Responsywna strona dla klienta prowadzącego sieć lokalnych sklepów odzieżowych, prezentująca ubrania, obuwie i dodatki oraz ułatwiająca znalezienie najbliższego sklepu."
+      },
+      "tech": ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      "links": {
+        "demo": "https://cameleon-moda.vercel.app/"
+      }
     }
   ]
 }
