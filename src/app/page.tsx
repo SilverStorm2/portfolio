@@ -1,6 +1,7 @@
 ﻿import Script from 'next/script';
 import About from '@/components/about';
 import Contact from '@/components/contact';
+import Experience from '@/components/experience';
 import Hero from '@/components/hero';
 import Projects from '@/components/projects';
 
@@ -13,15 +14,15 @@ const siteUrl =
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Gabriela Gugulska',
+  name: 'Gabriela Gugulska-Sierant',
   url: siteUrl,
-  jobTitle: 'Full-Stack Developer',
+  jobTitle: 'Web Developer',
   description:
-    'Full-stack developer crafting accessible, high-performing digital products with TypeScript, React, and Node.js.',
+    'Web Developer building commercial web applications and AI/RAG solutions with React, Next.js and TypeScript.',
   image: `${siteUrl}/og-image.svg`,
   sameAs: [
-    'https://github.com',
-    'https://linkedin.com',
+    'https://github.com/SilverStorm2',
+    'https://www.linkedin.com/in/gabriela-gugulska-sierant-203021238/',
     `mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'infogetcontact24@gmail.com'}`,
   ],
   knowsAbout: [
@@ -53,6 +54,7 @@ export default function Home() {
       </Script>
       <Hero />
       <About />
+      <Experience />
       <Projects />
       <Contact />
     </div>

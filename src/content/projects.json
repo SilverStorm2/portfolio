@@ -268,6 +268,29 @@
     },
     {
       "slug": "cyberbase-rag",
+      "details": [
+        {
+          "label": { "en": "Problem", "pl": "Problem" },
+          "text": {
+            "en": "Finding answers across a private collection of cybersecurity resources.",
+            "pl": "Wyszukiwanie odpowiedzi w prywatnej bazie materiałów o cyberbezpieczeństwie."
+          }
+        },
+        {
+          "label": { "en": "My work", "pl": "Mój wkład" },
+          "text": {
+            "en": "Development of CyberBase in cooperation with NTHW, using RAG to retrieve knowledge and generate answers with sources.",
+            "pl": "Rozwój CyberBase we współpracy z NTHW, z wykorzystaniem RAG do wyszukiwania wiedzy i generowania odpowiedzi ze źródłami."
+          }
+        },
+        {
+          "label": { "en": "Explore", "pl": "Zobacz" },
+          "text": {
+            "en": "The video presents the project; the Vue prototype opens the application login page.",
+            "pl": "Film prezentuje projekt; prototyp Vue prowadzi do strony logowania aplikacji."
+          }
+        }
+      ],
       "title": {
         "en": "CyberBase — RAG Knowledge Platform",
         "pl": "CyberBase — platforma wiedzy RAG"
@@ -281,14 +304,42 @@
         "demo": {
           "en": "Watch video",
           "pl": "Obejrzyj film"
+        },
+        "prototype": {
+          "en": "Vue prototype",
+          "pl": "Prototyp Vue"
         }
       },
       "links": {
-        "demo": "https://youtu.be/Cmx2clpGfCY"
+        "demo": "https://youtu.be/Cmx2clpGfCY",
+        "prototype": "https://cyberbase-three.vercel.app/login"
       }
     },
     {
       "slug": "blue-web-studio",
+      "details": [
+        {
+          "label": { "en": "Purpose", "pl": "Cel" },
+          "text": {
+            "en": "Present web development services, selected client projects and the collaboration process.",
+            "pl": "Prezentacja usług tworzenia stron, realizacji dla klientów i procesu współpracy."
+          }
+        },
+        {
+          "label": { "en": "My work", "pl": "Mój wkład" },
+          "text": {
+            "en": "As founder and Web Developer, I handle client requirements, implementation, testing, deployment and maintenance.",
+            "pl": "Jako założyciel i Web Developer odpowiadam za wymagania klientów, implementację, testy, wdrożenia i utrzymanie."
+          }
+        },
+        {
+          "label": { "en": "Result", "pl": "Efekt" },
+          "text": {
+            "en": "A responsive studio website bringing services, portfolio and contact paths together.",
+            "pl": "Responsywna strona studia łącząca ofertę, portfolio i ścieżki kontaktu."
+          }
+        }
+      ],
       "title": {
         "en": "Blue Web Studio",
         "pl": "Blue Web Studio"

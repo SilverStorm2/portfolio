@@ -7,12 +7,12 @@ import { useLanguage } from './layout';
 const socialLinks = [
   {
     name: 'GitHub',
-    href: 'https://github.com',
+    href: 'https://github.com/SilverStorm2',
     icon: Github,
   },
   {
     name: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/gabriela-gugulska-sierant-203021238/',
     icon: Linkedin,
   },
   {

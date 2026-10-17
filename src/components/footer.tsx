@@ -1,24 +1,19 @@
 ﻿'use client';
 
 import { footerContent } from '@/content/footer';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { useLanguage } from './layout';
 
 const socialLinks = [
   {
     name: 'GitHub',
-    href: 'https://github.com',
+    href: 'https://github.com/SilverStorm2',
     icon: Github,
   },
   {
     name: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/gabriela-gugulska-sierant-203021238/',
     icon: Linkedin,
-  },
-  {
-    name: 'Twitter',
-    href: 'https://twitter.com',
-    icon: Twitter,
   },
   {
     name: 'Email',

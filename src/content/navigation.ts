@@ -3,6 +3,7 @@
 export interface NavigationLabels {
   home: string;
   about: string;
+  experience: string;
   projects: string;
   contact: string;
 }
@@ -11,12 +12,14 @@ export const navigationContent: Record<Language, NavigationLabels> = {
   en: {
     home: 'Home',
     about: 'About',
+    experience: 'Experience',
     projects: 'Projects',
     contact: 'Contact',
   },
   pl: {
     home: 'Strona g\u0142\u00f3wna',
     about: 'O mnie',
+    experience: 'Doświadczenie',
     projects: 'Projekty',
     contact: 'Kontakt',
   },

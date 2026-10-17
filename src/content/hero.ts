@@ -15,10 +15,10 @@ export const heroContent: Record<Language, HeroContent> = {
   en: {
     greeting: "Hello, I'm",
     name: 'Gabriela Gugulska-Sierant',
-    title: 'Full-Stack Developer',
-    subtitle: 'Product Engineer & UI Specialist',
+    title: 'Web Developer',
+    subtitle: 'React · Next.js · AI/RAG',
     description:
-      'I craft accessible, performant web products and love pairing design sense with reliable engineering.',
+      'I build websites and web applications for commercial clients, integrate APIs and develop AI/RAG solutions — from interface to deployment.',
     cta: 'View my work',
     contact: 'Get in touch',
     scroll: 'Scroll down',
@@ -26,10 +26,10 @@ export const heroContent: Record<Language, HeroContent> = {
   pl: {
     greeting: 'Cze\u015b\u0107, jestem',
     name: 'Gabriela Gugulska-Sierant',
-    title: 'Full-Stack Developer',
-    subtitle: 'Full-Stack Developer & specjalistka UI',
+    title: 'Web Developer',
+    subtitle: 'React · Next.js · AI/RAG',
     description:
-      'Projektuj\u0119 i buduj\u0119 dost\u0119pne, wydajne aplikacje webowe \u0142\u0105cz\u0105c wra\u017cliwo\u015b\u0107 projektow\u0105 z solidn\u0105 in\u017cynieri\u0105.',
+      'Tworzę strony i aplikacje webowe dla klientów, integruję API i rozwijam rozwiązania AI/RAG — od interfejsu po wdrożenie.',
     cta: 'Zobacz moje projekty',
     contact: 'Skontaktuj si\u0119 ze mn\u0105',
     scroll: 'Przewi\u0144 w d\u00f3\u0142',

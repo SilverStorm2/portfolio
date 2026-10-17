@@ -16,10 +16,10 @@ const siteConfig: SiteConfig = {
     (process.env.VERCEL_URL
       ? `https://${process.env.VERCEL_URL}`
       : 'https://portfolio-main-projects.vercel.app'),
-  owner: 'Gabriela Gugulska',
-  title: 'Full-Stack Developer',
+  owner: 'Gabriela Gugulska-Sierant',
+  title: 'Web Developer',
   description:
-    'Full-stack developer crafting accessible, performant web products with TypeScript, React, Node.js, and modern tooling.',
+    'Web Developer building commercial web applications and AI/RAG solutions with React, Next.js and TypeScript.',
 };
 
 const geistSans = Geist({
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
-    template: '%s | Full-Stack Developer',
+    template: '%s | Web Developer',
   },
   description: siteConfig.description,
   keywords: [
-    'Gabriela Gugulska',
+    'Gabriela Gugulska-Sierant',
     'portfolio',
-    'full-stack developer',
+    'web developer',
     'React',
     'TypeScript',
     'Next.js',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: '/og-image.svg',
         width: 1200,
         height: 630,
-        alt: 'Full-Stack Developer',
+        alt: 'Web Developer',
       },
     ],
     locale: 'en_US',
@@ -72,7 +72,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
-    creator: '@gabrielanowak',
     images: ['/og-image.svg'],
   },
   alternates: {

@@ -1,7 +1,7 @@
 ﻿'use client';
 
 import Image from 'next/image';
-import { bioContent } from '@/content/about';
+import { bioContent, profileLinks } from '@/content/about';
 import { useLanguage } from './layout';
 
 export default function About() {
@@ -11,7 +11,7 @@ export default function About() {
   return (
     <section id="about" className="bg-muted/50 py-20">
       <div className="container mx-auto px-4">
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)]">
+        <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)]">
           <div className="flex justify-center lg:justify-start">
             <div className="group relative w-full max-w-xs sm:max-w-sm">
               <div
@@ -59,18 +59,27 @@ export default function About() {
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-primary/80">
                   {content.skillsLabel}
                 </h3>
-                <ul className="mt-3 flex flex-wrap gap-2">
-                  {content.skills.map((skill) => (
-                    <li
-                      key={skill}
-                      className="rounded-full border border-primary/10 bg-primary/10 px-3 py-1 text-sm font-medium text-primary shadow-sm transition-colors hover:border-primary/30 hover:bg-primary/15"
-                    >
-                      {skill}
-                    </li>
+                <div className="mt-3 space-y-4">
+                  {content.skillGroups.map((group) => (
+                    <div key={group.label}>
+                      <h4 className="mb-2 text-sm font-medium text-foreground">
+                        {group.label}
+                      </h4>
+                      <ul className="flex flex-wrap gap-2">
+                        {group.skills.map((skill) => (
+                          <li
+                            key={skill}
+                            className="rounded-full border border-primary/10 bg-primary/10 px-3 py-1 text-sm font-medium text-primary"
+                          >
+                            {skill}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
-              <dl className="grid gap-3">
+              <dl className="grid content-start gap-3">
                 {content.highlights.map((item) => (
                   <div
                     key={item.label}
@@ -93,6 +102,45 @@ export default function About() {
               </p>
               <p>
                 {content.profile.role} &bull; {content.profile.location}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href={profileLinks.cv}
+                  download
+                  className="rounded-lg bg-primary px-4 py-2 font-medium text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  {content.cvLabel}
+                </a>
+                <a
+                  href={profileLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg border border-primary px-4 py-2 font-medium text-primary hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-16 border-t border-border pt-10">
+          <div className="grid gap-8 md:grid-cols-2">
+            <div>
+              <h3 className="text-lg font-semibold text-foreground">
+                {content.educationLabel}
+              </h3>
+              <ul className="mt-3 space-y-3 text-sm leading-relaxed text-muted-foreground">
+                {content.education.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-foreground">
+                {content.communityLabel}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                {content.community}
               </p>
             </div>
           </div>

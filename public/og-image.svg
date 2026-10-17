@@ -1,6 +1,6 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">John Doe Portfolio Open Graph image</title>
-  <desc id="desc">Gradient background with name and role for John Doe, full-stack developer.</desc>
+  <title id="title">Gabriela Gugulska-Sierant — Web Developer</title>
+  <desc id="desc">Portfolio of Gabriela Gugulska-Sierant, Web Developer working with React, Next.js and AI/RAG.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#6366f1" />
@@ -20,19 +20,19 @@
   <g transform="translate(120 170)">
     <rect x="0" y="0" width="8" height="96" rx="4" fill="#f1f5f9" />
     <text x="40" y="60" font-family="'Geist', 'Segoe UI', sans-serif" font-size="54" font-weight="600" fill="#e2e8f0">
-      John Doe
+      Gabriela Gugulska-Sierant
     </text>
     <text x="40" y="110" font-family="'Geist', 'Segoe UI', sans-serif" font-size="28" font-weight="400" fill="#cbd5f5">
-      Full-Stack Developer · UI Engineer
+      Web Developer · React · Next.js · AI/RAG
     </text>
   </g>
   <g transform="translate(120 300)">
     <text x="0" y="0" font-family="'Geist', 'Segoe UI', sans-serif" font-size="22" fill="#e2e8f0" opacity="0.85">
-      Building accessible, performant web experiences with TypeScript, React, and Next.js.
+      Commercial web applications, API integrations and AI/RAG solutions.
     </text>
-    <rect x="0" y="40" width="360" height="64" rx="32" fill="url(#accent)" />
+    <rect x="0" y="40" width="640" height="64" rx="32" fill="url(#accent)" />
     <text x="40" y="83" font-family="'Geist', 'Segoe UI', sans-serif" font-size="26" font-weight="600" fill="#0f172a">
-      portfolio.example.com
+      portfolio-main-projects.vercel.app
     </text>
   </g>
 </svg>
