@@ -26,18 +26,10 @@ export default function Hero() {
   const { language } = useLanguage();
   const content = heroContent[language];
 
-  const handleScrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleScrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden"
+      className="relative flex min-h-[calc(100svh-4rem)] items-center justify-center overflow-hidden"
       aria-labelledby="hero-heading"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
@@ -109,13 +101,12 @@ export default function Hero() {
           </p>
 
           <div className="mb-16 flex flex-col items-center justify-center gap-4 animate-fade-in-delay-3 sm:flex-row">
-            <button
-              type="button"
-              onClick={handleScrollToProjects}
+            <a
+              href="#projects"
               className="w-full rounded-lg bg-primary px-6 py-3 text-base font-medium text-primary-foreground shadow-lg transition-all duration-300 hover:scale-105 hover:bg-primary/90 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:w-auto sm:px-8 sm:py-4 sm:text-lg"
             >
               {content.cta}
-            </button>
+            </a>
             <a
               href="#contact"
               className="w-full rounded-lg border border-primary px-6 py-3 text-base font-medium text-primary transition-colors duration-300 hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:w-auto sm:px-8 sm:py-4 sm:text-lg"
@@ -125,9 +116,8 @@ export default function Hero() {
           </div>
 
           <div className="animate-bounce">
-            <button
-              type="button"
-              onClick={handleScrollToAbout}
+            <a
+              href="#about"
               className="group flex flex-col items-center text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               aria-label={content.scroll}
             >
@@ -136,7 +126,7 @@ export default function Hero() {
                 className="h-5 w-5 transition-transform group-hover:translate-y-1"
                 aria-hidden={true}
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>

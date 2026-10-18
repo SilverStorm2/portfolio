@@ -1,14 +1,20 @@
 ﻿'use client';
 
 import { useEffect, useId, useRef, useState } from 'react';
-import Link from 'next/link';
 import { Check, ChevronDown, Globe, Menu, X } from 'lucide-react';
 import { useLanguage } from './layout';
 import { languageMenuLabel, navigationContent } from '@/content/navigation';
 
 const focusRing =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background';
-const sectionIds = ['home', 'about', 'experience', 'projects', 'contact'];
+const sectionIds = [
+  'home',
+  'about',
+  'skills',
+  'experience',
+  'projects',
+  'contact',
+];
 
 type Language = ReturnType<typeof useLanguage>['language'];
 type SetLanguage = ReturnType<typeof useLanguage>['setLanguage'];
@@ -63,6 +69,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '#home', label: labels.home },
     { href: '#about', label: labels.about },
+    { href: '#skills', label: labels.skills },
     { href: '#experience', label: labels.experience },
     { href: '#projects', label: labels.projects },
     { href: '#contact', label: labels.contact },
@@ -72,16 +79,16 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link
-            href="/"
+          <a
+            href="#home"
             className={`text-xl font-bold text-foreground transition-colors hover:text-primary ${focusRing}`}
           >
             Portfolio
-          </Link>
+          </a>
 
-          <div className="hidden items-center space-x-8 md:flex">
+          <div className="hidden items-center gap-2 2xl:gap-6 xl:flex">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 aria-current={
@@ -91,12 +98,12 @@ export default function Navbar() {
                 className={`rounded-md px-3 py-2 transition-colors hover:bg-primary/10 hover:text-primary ${activeSection === link.href ? 'bg-primary/10 font-semibold text-primary ring-1 ring-primary/20' : 'text-foreground'} ${focusRing}`}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
             <LanguageMenu language={language} setLanguage={setLanguage} />
           </div>
 
-          <div className="flex items-center space-x-4 md:hidden">
+          <div className="flex items-center space-x-4 xl:hidden">
             <LanguageMenu language={language} setLanguage={setLanguage} />
             <button
               type="button"
@@ -119,10 +126,10 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div id={mobileMenuId} className="md:hidden">
+        <div id={mobileMenuId} className="xl:hidden">
           <div className="space-y-1 border-t border-border bg-background px-2 pb-3 pt-2">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 aria-current={
@@ -135,7 +142,7 @@ export default function Navbar() {
                 }}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

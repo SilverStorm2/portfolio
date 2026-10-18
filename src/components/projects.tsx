@@ -54,10 +54,17 @@ export default function Projects() {
   const linkLabels = projectLinkLabels[language] ?? projectLinkLabels.en;
 
   return (
-    <section id="projects" className="py-20">
+    <section
+      id="projects"
+      aria-labelledby="projects-heading"
+      className="scroll-mt-16 pb-20 pt-8"
+    >
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-12 max-w-3xl space-y-4 text-center">
-          <h2 className="text-3xl font-bold text-foreground md:text-4xl">
+          <h2
+            id="projects-heading"
+            className="text-3xl font-bold text-foreground md:text-4xl"
+          >
             {intro.heading}
           </h2>
           <p className="text-base text-muted-foreground md:text-lg">

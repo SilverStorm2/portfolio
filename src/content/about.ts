@@ -5,6 +5,7 @@ export interface BioContentEntry {
   subheading: string;
   intro: string;
   paragraphs: string[];
+  closing: { before: string; emphasis: string; after: string };
   skillsLabel: string;
   skillGroups: { label: string; skills: string[] }[];
   highlights: { label: string; value: string }[];
@@ -19,7 +20,6 @@ export interface BioContentEntry {
   education: string[];
   communityLabel: string;
   community: string;
-  cvLabel: string;
   profile: {
     name: string;
     role: string;
@@ -32,50 +32,98 @@ export interface BioContentEntry {
 export const profileLinks = {
   github: 'https://github.com/SilverStorm2',
   linkedin: 'https://www.linkedin.com/in/gabriela-gugulska-sierant-203021238/',
-  cv: '/cv-gabriela-gugulska-sierant.pdf',
 };
 
 export const bioContent: Record<Language, BioContentEntry> = {
   en: {
     heading: 'About Me',
-    subheading: 'React · Next.js · AI/RAG',
+    subheading: 'Web Development · Cybersecurity · AI/RAG',
     intro:
-      'I am a Web Developer with a Bachelor of Engineering in Computer Science, specialising in cybersecurity. I build web applications from responsive interfaces and API integrations to deployment and maintenance.',
+      'I am a Web Developer and Cybersecurity Analytics graduate with a strong interest in building secure, scalable and maintainable applications. My expertise combines modern web technologies with cybersecurity principles, covering frontend and backend development, application security and infrastructure.',
     paragraphs: [
-      'I work as a contract developer with Cooperate AS and run Blue Web Studio, delivering websites and applications for commercial clients. My work combines React, Next.js and TypeScript with backend services and databases.',
-      'I also develop LLM and RAG solutions, including CyberBase, and manage Linux infrastructure with Docker and Coolify. I focus on accessibility, application security and maintainable code.',
+      'I work as a contract developer with Cooperate AS and run Blue Web Studio, developing websites and web applications for commercial clients. I work with React, Next.js, TypeScript, APIs and databases, handling projects from implementation to deployment and maintenance.',
+      'My cybersecurity background includes web application security, OWASP methodologies, vulnerability assessment fundamentals, secure authentication and Linux environments. I also develop AI-powered solutions, including CyberBase — a cybersecurity knowledge platform built using Retrieval-Augmented Generation (RAG).',
     ],
-    skillsLabel: 'Core skills',
+    closing: {
+      before: 'I focus on combining ',
+      emphasis:
+        'software engineering, cybersecurity and practical problem-solving',
+      after: ' to create reliable and secure solutions.',
+    },
+    skillsLabel: 'Core Skills',
     skillGroups: [
       {
-        label: 'Frontend',
-        skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+        label: 'Frontend Development',
+        skills: [
+          'React',
+          'Next.js',
+          'TypeScript',
+          'JavaScript',
+          'HTML5 / CSS3',
+          'Tailwind CSS',
+          'Responsive Design',
+        ],
       },
       {
-        label: 'Backend & data',
-        skills: ['Node.js', 'Python', 'REST APIs', 'GraphQL', 'SQL'],
+        label: 'Backend & Databases',
+        skills: [
+          'Node.js',
+          'Python',
+          'REST APIs',
+          'GraphQL',
+          'PostgreSQL',
+          'Supabase',
+          'SQL',
+        ],
       },
       {
-        label: 'Deployment',
-        skills: ['Linux', 'Docker', 'Coolify', 'Hetzner Cloud', 'CI/CD'],
+        label: 'Cybersecurity',
+        skills: [
+          'Web Application Security',
+          'OWASP Top 10',
+          'OWASP WSTG',
+          'Secure Coding',
+          'Authentication & Authorization',
+          'Vulnerability Assessment Fundamentals',
+          'Security Testing Fundamentals',
+        ],
       },
       {
-        label: 'AI & security',
-        skills: ['RAG', 'LLM integration', 'Web application security'],
+        label: 'Cloud, DevOps & Infrastructure',
+        skills: [
+          'Linux',
+          'Docker',
+          'Coolify',
+          'Hetzner Cloud',
+          'CI/CD',
+          'Git / GitHub',
+          'Deployment & Maintenance',
+        ],
+      },
+      {
+        label: 'AI & Knowledge Systems',
+        skills: [
+          'RAG',
+          'LLM Integration',
+          'RAGFlow',
+          'Knowledge Retrieval',
+          'AI API Integration',
+        ],
       },
     ],
     highlights: [
       {
-        label: 'Commercial projects',
-        value: 'Blue Web Studio — websites and applications for clients',
+        label: 'Commercial Development',
+        value: 'Blue Web Studio / Cooperate AS — client web applications',
       },
       {
-        label: 'AI & knowledge retrieval',
-        value: 'CyberBase — an RAG platform with source-backed answers',
+        label: 'Cybersecurity & Engineering',
+        value:
+          'Cybersecurity Analytics — application security, OWASP and security fundamentals',
       },
       {
-        label: 'Infrastructure & deployment',
-        value: 'Linux, Docker and Coolify on Hetzner Cloud',
+        label: 'AI & Infrastructure',
+        value: 'CyberBase — RAG, Linux, Docker, RAGFlow and cloud deployment',
       },
     ],
     experienceLabel: 'Experience',
@@ -117,7 +165,6 @@ export const bioContent: Record<Language, BioContentEntry> = {
     communityLabel: 'Community & communication',
     community:
       'Speaker at Adepci IT 2026. Nearly 12 years of professional experience in London, including the NHS, developed my fluent English communication, attention to detail and teamwork.',
-    cvLabel: 'Download CV (English, PDF)',
     profile: {
       name: 'Gabriela Gugulska-Sierant',
       role: 'Web Developer',
@@ -128,44 +175,93 @@ export const bioContent: Record<Language, BioContentEntry> = {
   },
   pl: {
     heading: 'O mnie',
-    subheading: 'React · Next.js · AI/RAG',
+    subheading: 'Aplikacje webowe · Cyberbezpieczeństwo · AI/RAG',
     intro:
-      'Jestem Web Developerem i absolwentem informatyki ze specjalizacją w cyberbezpieczeństwie. Tworzę aplikacje webowe — od responsywnego interfejsu i integracji API po wdrożenie i utrzymanie.',
+      'Jestem Web Developerem i absolwentem kierunku Cybersecurity Analytics. Interesuje mnie tworzenie bezpiecznych, skalowalnych i łatwych w utrzymaniu aplikacji. Łączę nowoczesne technologie webowe z zasadami cyberbezpieczeństwa — od frontendu i backendu po bezpieczeństwo aplikacji i infrastrukturę.',
     paragraphs: [
-      'Współpracuję kontraktowo z Cooperate AS i prowadzę Blue Web Studio, realizując strony oraz aplikacje dla klientów. Łączę React, Next.js i TypeScript z usługami backendowymi i bazami danych.',
-      'Rozwijam także rozwiązania wykorzystujące LLM i RAG, w tym CyberBase, oraz zarządzam infrastrukturą Linux z Dockerem i Coolify. Dbam o dostępność, bezpieczeństwo aplikacji i jakość kodu.',
+      'Współpracuję kontraktowo z Cooperate AS i prowadzę Blue Web Studio, tworząc strony oraz aplikacje webowe dla klientów komercyjnych. Pracuję z React, Next.js, TypeScript, API i bazami danych, realizując projekty od implementacji po wdrożenie i utrzymanie.',
+      'Moje przygotowanie w zakresie cyberbezpieczeństwa obejmuje bezpieczeństwo aplikacji webowych, metodyki OWASP, podstawy oceny podatności, bezpieczne uwierzytelnianie i środowiska Linux. Rozwijam także rozwiązania oparte na AI, w tym CyberBase — platformę wiedzy o cyberbezpieczeństwie wykorzystującą Retrieval-Augmented Generation (RAG).',
     ],
+    closing: {
+      before: 'Łączę ',
+      emphasis:
+        'inżynierię oprogramowania, cyberbezpieczeństwo i praktyczne rozwiązywanie problemów',
+      after: ', aby tworzyć niezawodne i bezpieczne rozwiązania.',
+    },
     skillsLabel: 'Kluczowe umiejętności',
     skillGroups: [
       {
         label: 'Frontend',
-        skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+        skills: [
+          'React',
+          'Next.js',
+          'TypeScript',
+          'JavaScript',
+          'HTML5 / CSS3',
+          'Tailwind CSS',
+          'Responsive Design',
+        ],
       },
       {
-        label: 'Backend i dane',
-        skills: ['Node.js', 'Python', 'REST APIs', 'GraphQL', 'SQL'],
+        label: 'Backend i bazy danych',
+        skills: [
+          'Node.js',
+          'Python',
+          'REST APIs',
+          'GraphQL',
+          'PostgreSQL',
+          'Supabase',
+          'SQL',
+        ],
       },
       {
-        label: 'Wdrożenia',
-        skills: ['Linux', 'Docker', 'Coolify', 'Hetzner Cloud', 'CI/CD'],
+        label: 'Cyberbezpieczeństwo',
+        skills: [
+          'Web Application Security',
+          'OWASP Top 10',
+          'OWASP WSTG',
+          'Secure Coding',
+          'Authentication & Authorization',
+          'Vulnerability Assessment Fundamentals',
+          'Security Testing Fundamentals',
+        ],
       },
       {
-        label: 'AI i bezpieczeństwo',
-        skills: ['RAG', 'Integracje LLM', 'Bezpieczeństwo aplikacji webowych'],
+        label: 'Chmura, DevOps i infrastruktura',
+        skills: [
+          'Linux',
+          'Docker',
+          'Coolify',
+          'Hetzner Cloud',
+          'CI/CD',
+          'Git / GitHub',
+          'Deployment & Maintenance',
+        ],
+      },
+      {
+        label: 'AI i systemy wiedzy',
+        skills: [
+          'RAG',
+          'LLM Integration',
+          'RAGFlow',
+          'Knowledge Retrieval',
+          'AI API Integration',
+        ],
       },
     ],
     highlights: [
       {
-        label: 'Realizacje komercyjne',
-        value: 'Blue Web Studio — strony i aplikacje dla klientów',
+        label: 'Rozwój aplikacji komercyjnych',
+        value: 'Blue Web Studio / Cooperate AS — aplikacje webowe dla klientów',
       },
       {
-        label: 'AI i wyszukiwanie wiedzy',
-        value: 'CyberBase — platforma RAG z odpowiedziami opartymi na źródłach',
+        label: 'Cyberbezpieczeństwo i inżynieria',
+        value:
+          'Cybersecurity Analytics — bezpieczeństwo aplikacji, OWASP i podstawy bezpieczeństwa',
       },
       {
-        label: 'Infrastruktura i wdrożenia',
-        value: 'Linux, Docker i Coolify w Hetzner Cloud',
+        label: 'AI i infrastruktura',
+        value: 'CyberBase — RAG, Linux, Docker, RAGFlow i wdrożenia w chmurze',
       },
     ],
     experienceLabel: 'Doświadczenie',
@@ -207,7 +303,6 @@ export const bioContent: Record<Language, BioContentEntry> = {
     communityLabel: 'Społeczność i komunikacja',
     community:
       'Prelegent Adepci IT 2026. Blisko 12 lat pracy w Londynie, w tym w NHS, rozwinęło moją swobodną komunikację po angielsku, dokładność i umiejętność współpracy.',
-    cvLabel: 'Pobierz CV (angielski, PDF)',
     profile: {
       name: 'Gabriela Gugulska-Sierant',
       role: 'Web Developer',

@@ -4,6 +4,7 @@ import Contact from '@/components/contact';
 import Experience from '@/components/experience';
 import Hero from '@/components/hero';
 import Projects from '@/components/projects';
+import Skills from '@/components/skills';
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
@@ -54,6 +55,7 @@ export default function Home() {
       </Script>
       <Hero />
       <About />
+      <Skills />
       <Experience />
       <Projects />
       <Contact />

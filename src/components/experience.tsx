@@ -11,7 +11,7 @@ export default function Experience() {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="scroll-mt-20 py-20"
+      className="py-20"
     >
       <div className="container mx-auto px-4">
         <h2

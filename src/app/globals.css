@@ -191,3 +191,18 @@
 .animate-float-delay {
   animation: floatDelay 8s ease-in-out infinite;
 }
+
+/* Keep anchor targets below the sticky navigation. */
+html {
+  scroll-behavior: smooth;
+}
+
+main > div > section[id] {
+  scroll-margin-top: 4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
